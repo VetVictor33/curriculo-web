@@ -8,8 +8,13 @@
     margin: 0;
     box-sizing: content-box;
     display: inline-block;
-
 }
+
+.efeitoCursor() {
+    cursor: pointer;
+    font-size: large;
+}
+
 
 * {
     margin: 0;
@@ -62,6 +67,10 @@ img {
         margin-left: 1rem;
     }
 
+    a:hover {
+        .efeitoCursor();
+    }
+
     .contato-item {
         display: inline-block;
         margin-left: 1rem;
@@ -112,8 +121,7 @@ main {
     }
 
     .nav-item:hover {
-        cursor: pointer;
-        font-size: large;
+        .efeitoCursor();
     }
 }
 
@@ -136,15 +144,18 @@ article {
         padding: 0.3rem 0 0.3rem;
     }
 
+    ul {
+        list-style-position: inside;
+    }
+
     li {
         margin-left: 1.6rem;
         padding-top: 0.3rem;
+        text-align: center;
     }
 
-    p {
-        text-align: left;
-        padding-bottom: 0.6rem;
-    }
+    text-align: center;
+    padding-bottom: 1.6rem;
 
 }
 
